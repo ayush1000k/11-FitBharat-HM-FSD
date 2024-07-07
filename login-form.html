@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body{
+      font-family: nunito , sans-serif;
+    }
+
+    .navbar{
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-bottom: 100px;
+    }
+    .home{
+      color:white;
+      text-decoration: none;
+      background-color: grey;
+      padding: 10px 15px ;
+      margin: 20px 25px;
+      cursor: pointer;
+    }
+    
+    .container{
+      background-color: rgb(207, 207, 207);
+      border: solid rgb(223, 177, 177);
+      border-radius: 10px;
+      margin:auto;
+      padding: 20px;
+      width:30%;
+    }
+    form.formBox{
+      display:flex;
+      flex-direction: column;
+    }
+    h3{ 
+      color:rgb(171, 21, 201);
+    }
+    form input {
+      padding: 10px ;
+      margin: 5px;
+    }
+    /* to align the text of placeholder in a input bar */
+    form input::placeholder{
+      text-align: center;
+    }
+    .submitBtn{
+      background-color: rgb(169, 94, 184);
+      border-bottom:3px  solid black;
+      padding: 8px;
+      margin: 5px;
+      cursor: pointer;
+      color:whitesmoke;
+      font-family: Nunito , sans-serif;
+    }
+    footer {
+      font-family: Nunito , sans-serif;
+      font-size: 14px;
+      padding: 8px;
+    }
+    footer strong a{
+      color:blue;
+    } 
+  </style>
+</head>
+<body>
+      <!-- A login form  -->
+      <div class="navbar">
+        <h3>Welcome back</h3>
+        <a href="#" class="home" onclick="
+             window.location.href='index.html';
+          ">Home</a>
+      </div>
+
+      <div class="container">
+        <form class="formBox">
+
+        <h3 style="text-align: center; font-size:30px;">Login</h3>
+
+        <input type="text" placeholder="E-mail">
+
+        <input type="text" name="" id="" placeholder="Enter your password">
+
+        <input type="Submit" class="submitBtn" value="Submit">
+
+        <footer>
+          <strong>Not Signed up? <a href="#" onclick="
+            window.location.href = 'signin-form.html';
+          ">Click</a> here </strong>
+        </footer>
+        </form> 
+      </div>
+      
+</body>
+</html>
